@@ -1,18 +1,25 @@
 :root {
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
-  --logo-accent-color: #000000;
-  --primary-accent-color: #2196f3;
-  --primary-background-color: #2f303a;
-  --secondary-background-color: #f5f4fa;
+  --text-color: #757575;
   --primary-white: #ffffff;
   --secondary-white: rgba(255, 255, 255, 0.6);
   --primary-dark-color: #212121;
-  --text-color: #757575;
-  --
+  --logo-accent-color: #000000;
+  --primary-accent-color: #2196f3;
+
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --primary-border-color: 1px solid #ececec;
+  --overlay-colour: rgba(47, 48, 58, 0.4);
+
+  --social-icon-background: rgba(255, 255, 255, 0.1);
+
   --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  --btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --secondary-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -67,11 +74,14 @@ ul {
 
 /* ========== HEADER ========== */
 .page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+  border-bottom: var(--primary-border-color);
 }
 
 .header-container {
@@ -139,9 +149,6 @@ ul {
   color: var(--primary-accent-color);
 }
 
-.header-border {
-  border-bottom: 1px solid #ECECEC
-}
 /* ========= END HEADER ========= */
 
 /* ============ HERO ============ */
@@ -218,7 +225,7 @@ ul {
 
 .features-title {
   margin-bottom: 10px;
-  
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -368,7 +375,7 @@ ul {
   background-color: var(--primary-background-color);
 }
 
-.address {
+.footer-address {
   margin-top: 20px;
 
   font-style: normal;
@@ -381,10 +388,11 @@ ul {
 }
 
 .footer-location {
+  margin-bottom: 9px;
   color: var(--primary-white);
 }
 
-.footer-contact {
+.footer-link {
   color: var(--secondary-white);
 }
 
@@ -392,8 +400,8 @@ ul {
   margin-bottom: 9px;
 }
 
-.footer-contact:hover,
-.footer-contact:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--primary-white);
 }
 /* ========= END FOOTER ========= */
