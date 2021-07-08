@@ -142,6 +142,8 @@ ul {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   color: var(--text-color);
 }
 
@@ -150,6 +152,24 @@ ul {
   color: var(--primary-accent-color);
 }
 
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.contact-link:hover .envelope,
+.contact-link:focus .envelope,
+.contact-link:hover .smartphone,
+.contact-link:focus .smartphone {
+  fill: var(--primary-accent-color);
+}
 /* ========= END HEADER ========= */
 
 /* ============ HERO ============ */
