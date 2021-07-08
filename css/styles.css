@@ -253,6 +253,15 @@ ul {
   margin-right: 30px;
 }
 
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+}
+
 .features-title {
   margin-bottom: 10px;
 
