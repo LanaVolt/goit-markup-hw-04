@@ -351,12 +351,6 @@ ul {
   padding-bottom: 30px;
 }
 
-/* .social-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .social-link {
   display: flex;
   justify-content: center;
@@ -378,6 +372,50 @@ ul {
 }
 
 /* ========= END TEAM SECTION ========= */
+
+/* ========= CLIENTS SECTION ========= */
+
+/* ul */
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* li */
+.client {
+  display: flex;
+  width: 170px;
+  height: 92px;
+}
+
+/* a */
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  border: 1px solid var(--primary-icon-colour);
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--primary-accent-color);
+  fill: var(--primary-accent-color);
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+  fill: var(--primary-accent-color);
+}
+
+/* div */
+.client-logo {
+  fill: var(--primary-icon-colour);
+}
+
+/* ========= END CLIENTS SECTION ========= */
 
 /* ========= PORTFOLIO ========= */
 .btn-list {
