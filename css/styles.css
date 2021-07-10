@@ -323,7 +323,7 @@ ul {
 
 .team-about {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   text-align: center;
 }
 
@@ -336,6 +336,37 @@ ul {
 
 .team-position {
   line-height: 0.84;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 30px;
+}
+
+/* .social-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: palevioletred;
+}
+
+.social-logo:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
 }
 /* ========= END TEAM SECTION ========= */
 
