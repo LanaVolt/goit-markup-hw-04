@@ -359,15 +359,19 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: palevioletred;
+  fill: var(--primary-icon-colour);
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--primary-white);
+  background-color: var(--primary-accent-color);
 }
 
 .social-logo:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon {
-}
 /* ========= END TEAM SECTION ========= */
 
 /* ========= PORTFOLIO ========= */
