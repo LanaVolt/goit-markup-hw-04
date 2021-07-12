@@ -16,11 +16,12 @@
   --primary-icon-colour: #afb1b8;
   --social-icon-background: rgba(255, 255, 255, 0.1);
 
-  --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  --secondary-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  --btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  --hover-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 body {
@@ -75,8 +76,11 @@ ul {
 
 /* ========== HEADER ========== */
 .page-header {
+  max-width: 1600px;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 500;
   line-height: 1.14;
@@ -448,6 +452,7 @@ ul {
 .portfolio-button.current {
   color: var(--primary-white);
   background-color: var(--primary-accent-color);
+  box-shadow: var(--btn-shadow);
 }
 
 .card-list {
@@ -455,6 +460,14 @@ ul {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+}
+
+.example-link {
+  display: block;
+}
+
+.example-link:hover {
+  box-shadow: var(--hover-card-shadow);
 }
 
 .example {
@@ -487,9 +500,17 @@ ul {
 
 /* ========= FOOTER ========= */
 .footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--primary-background-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -521,4 +542,46 @@ ul {
 .footer-link:focus {
   color: var(--primary-white);
 }
+
+.join {
+  margin-left: 70px;
+}
+
+.join-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+
+.join-links {
+  display: flex;
+  align-items: center;
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-logo:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-icon {
+  fill: var(--primary-white);
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--primary-accent-color);
+}
+
 /* ========= END FOOTER ========= */
