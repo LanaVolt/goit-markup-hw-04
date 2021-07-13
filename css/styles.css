@@ -160,12 +160,14 @@ ul {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-link:hover .envelope,
@@ -261,9 +263,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
 .features-title {
@@ -331,8 +334,7 @@ ul {
 }
 
 .team-about {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 32px;
   text-align: center;
 }
 
@@ -344,6 +346,7 @@ ul {
 }
 
 .team-position {
+  margin-bottom: 16px;
   line-height: 0.84;
 }
 
@@ -351,8 +354,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding-bottom: 30px;
 }
 
 .social-link {
@@ -388,7 +389,6 @@ ul {
 
 /* li */
 .client {
-  display: flex;
   width: 170px;
   height: 92px;
 }
@@ -399,6 +399,7 @@ ul {
   align-items: center;
   justify-content: center;
   width: inherit;
+  height: inherit;
   border: 1px solid var(--primary-icon-colour);
   border-radius: 4px;
 }
@@ -466,7 +467,8 @@ ul {
   display: block;
 }
 
-.example-link:hover {
+.example-link:hover,
+.example-link:focus {
   box-shadow: var(--hover-card-shadow);
 }
 
